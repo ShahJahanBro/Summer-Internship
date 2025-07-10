@@ -13,7 +13,6 @@ body {
   overflow: hidden;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.15);
-
   transition: box-shadow 0.3s ease;
 }
 
@@ -36,4 +35,31 @@ body {
 }
 .icon:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 400px) {
+    .card {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .profile-img {
+        width: 120px;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
