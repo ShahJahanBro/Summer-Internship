@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(76, 175, 80, 0.5);
+  transition: 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(76, 175, 80, 0.7);
+}
+
+.icon {
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.icon:hover {
+  transform: scale(1.2);
+}

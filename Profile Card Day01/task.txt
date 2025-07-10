@@ -1,0 +1,23 @@
+🎯 Task: Design a Simple Responsive Profile Card
+Objective:
+Test basic HTML & CSS skills, responsiveness, and attention to design.
+________________________________________
+📝 Task Details:
+✅ Create a single HTML file containing a profile card with the following:
+1️⃣ Profile Picture (use any placeholder image)
+2️⃣ Name and Title (e.g., “Ali Raza” – “Front-End Developer”)
+3️⃣ Short Bio (2–3 lines, placeholder text allowed)
+4️⃣ Social Media Icons (LinkedIn, GitHub – use icons from Font Awesome or placeholders)
+________________________________________
+🎨 Design Requirements:
+✅ Use CSS to style the card with:
+•	Clean layout
+•	Hover effects on social icons
+•	Rounded profile image
+•	Shadow on the card for depth
+•	Responsive design (card should look good on mobile and desktop)
+________________________________________
+🛠️ Submission:
+✅ Submit:
+•	A zipped folder with your HTML and CSS files
+✅ Deadline: Submit within the same day
