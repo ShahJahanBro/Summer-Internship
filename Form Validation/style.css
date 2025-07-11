@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d8e5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+form {
+    background-color: #f6cbcb;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+
+form input[type="submit"] {
+    background-color: #4f46e5;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3730a3;
+}
+
+
+.error-message {
+    color: #e11d48;
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+
+.success-message {
+    color: #059669;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+}
