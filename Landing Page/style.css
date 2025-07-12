@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif; 
     background-color: #e0f7f1; 
-    color: #333;
+    color: white;
 }
 
 .header{
@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    background-color: burlywood;
+    background-color: #22a5b6;
     height: 60px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     
@@ -30,7 +30,7 @@ body {
 .nav ul li a{
     text-decoration: none;
     font-size: 1rem;
-    color: #222;
+    color: white;
     font-weight: 500;
     transition: color 0.3s, text-decoration 0.3s;
 }
@@ -41,4 +41,57 @@ ul li a:hover{
 ul a:active {
   color: #7b341e;
     text-decoration: underline;
+}
+
+
+.hero{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007e8f;
+    flex-wrap: wrap;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.hero div{
+   display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+   color: white;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero div .apply-btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero div .apply-btn:hover{
+    background-color: #3730a3;
+}
+.hero img{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
 }
