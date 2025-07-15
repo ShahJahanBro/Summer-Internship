@@ -8,12 +8,16 @@ body{
 }
 
 .header{
+  position: fixed;
+  top: 0;
+  width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
     background-color: #d3cece;
     height: 50px;
    box-shadow: rgb(91, 107, 123) 0px 20px 30px -10px;
+    z-index: 999;
 }
 .header ul{
     display: flex;
@@ -102,6 +106,102 @@ body{
     transform: translateY(0);
   }
 }
+
+
+
+.about {
+  max-width: 800px;
+  margin: 100px auto 60px;
+  padding: 40px 30px;
+  background-color: #efdcdc; 
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+   background-color: #ebe5e5;
+}
+
+.container {
+  width: 260px;
+  background-color: #efdcdc;
+  border: 2px dashed #a17d7d;
+  border-radius: 12px;
+  padding: 20px 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.container img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.container p:first-of-type {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.container p:last-of-type {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #a17d7d;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #8a6868;
+  transform: scale(1.05);
+}
+
 
 /* Responsive text */
 @media (max-width: 600px) {
