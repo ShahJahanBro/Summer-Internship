@@ -54,6 +54,12 @@ body {
   color: #938d8d;
 }
 
+.nav ul li a.active {
+  color: #a17d7d; 
+  font-weight: bold;
+}
+
+
 .main {
   width: min(90%, 600px);
   margin: 130px auto 0;
@@ -80,6 +86,53 @@ body {
   margin-bottom: 30px;
 }
 
+
+
+/*  About Section */
+
+
+.about-heading{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.container p {
+  flex: 1;
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.container img {
+  flex: 1;
+  max-width: 100%;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .header {
@@ -99,6 +152,7 @@ body {
     font-size: 1.5rem;
   }
 }
+
 
 @media (max-width: 600px) {
   .main {
