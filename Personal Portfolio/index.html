@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#projects" class="active">Projects</a></li>
+        <li><a href="" class="active">Contact</a></li>
+      </ul>
     </header>
 
     <section class="main">
-        <div class="text">
+      <div class="text">
         <h1>Shah Jahan</h1>
         <p>Web Developer Intern</p>
-        </div>
-        <div class="img">
-            <img src="images/shahjhanprofile.png" alt="">
-        </div>
+      </div>
+      <div class="img">
+        <img src="images/shahjhanprofile.png" alt="" />
+      </div>
     </section>
 
-    <section class="about">
-        
+    <section class="about" id="about">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, molestiae
+        culpa dolorem dolore, deleniti voluptates minima, magnam magni hic
+        veniam voluptas voluptatem ut deserunt reprehenderit molestias.
+        Eligendi, dolore, ipsum eaque tempore ut sed illo ab deserunt distinctio
+        fugiat, suscipit quas.
+      </p>
     </section>
-    
-</body>
+
+    <section class="projects" id="projects">
+
+        <div class="container">
+            <img src="images/download.png" alt="">
+            <p>Project Name</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+
+        <div class="container">
+            <img src="images/download.png" alt="">
+            <p>Project Name</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+
+        <div class="container">
+            <img src="images/download.png" alt="">
+            <p>Project Name</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+
+    </section>
+
+  </body>
 </html>
