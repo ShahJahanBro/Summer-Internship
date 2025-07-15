@@ -12,6 +12,7 @@ body {
   background-color: #f0e6e6;
 }
 
+/* Header/Navbar */
 .header {
   display: flex;
   justify-content: space-around;
@@ -59,7 +60,7 @@ body {
   font-weight: bold;
 }
 
-
+/* Main Section */
 .main {
   width: min(90%, 600px);
   margin: 130px auto 0;
@@ -67,7 +68,6 @@ body {
   text-align: center;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -86,12 +86,8 @@ body {
   margin-bottom: 30px;
 }
 
-
-
-/*  About Section */
-
-
-.about-heading{
+/* About Section */
+.about-heading {
   text-align: center;
   margin-top: 80px;
 }
@@ -131,9 +127,86 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* Contact Section */
+form {
+  background-color: #f0e6e6;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
 
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
 
-/* Responsive Design */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #d1b3b3;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fffafa;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #a17d7d;
+  box-shadow: 0 0 0 2px rgba(161, 125, 125, 0.2);
+}
+
+form input[type="submit"] {
+  background-color: #a17d7d;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #8a6868;
+}
+
+.error-message {
+  color: #e11d48;
+  font-size: 0.9rem;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.success-message {
+  color: #059669;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+/* Form responsiveness */
+@media (max-width: 500px) {
+  form {
+    padding: 20px;
+  }
+}
+
+/* Navbar responsiveness */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -153,7 +226,7 @@ body {
   }
 }
 
-
+/* Main content responsiveness */
 @media (max-width: 600px) {
   .main {
     padding: 40px 20px;
@@ -165,5 +238,17 @@ body {
 
   .main p {
     font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .container p,
+  .container img {
+    width: 100%;
+    max-width: 100%;
   }
 }
