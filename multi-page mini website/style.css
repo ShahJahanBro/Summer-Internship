@@ -12,7 +12,7 @@ body {
   background-color: #f0e6e6;
 }
 
-/* Header/Navbar */
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -60,7 +60,7 @@ body {
   font-weight: bold;
 }
 
-/* Main Section */
+
 .main {
   width: min(90%, 600px);
   margin: 130px auto 0;
@@ -86,7 +86,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* About Section */
+
 .about-heading {
   text-align: center;
   margin-top: 80px;
@@ -127,7 +127,8 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Contact Section */
+
+
 form {
   background-color: #f0e6e6;
   padding: 30px 40px;
@@ -199,14 +200,14 @@ form input[type="submit"]:hover {
   display: none;
 }
 
-/* Form responsiveness */
+
 @media (max-width: 500px) {
   form {
     padding: 20px;
   }
 }
 
-/* Navbar responsiveness */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -226,7 +227,7 @@ form input[type="submit"]:hover {
   }
 }
 
-/* Main content responsiveness */
+
 @media (max-width: 600px) {
   .main {
     padding: 40px 20px;
