@@ -1,0 +1,94 @@
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("background.gif");
+      color: #36c7bc;
+      margin: 0 10% 0 10%;
+    }
+    .container {
+      border: 10px white solid;
+      background-color: white;
+    }
+    .header {
+      border: 5px #a8f0f0 solid;
+      background-color: #36f7e9;
+    }
+    .header h1 {
+      text-align: right;
+    }
+    span {
+      border-bottom: 2px #36c7bc dashed;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      float: right;
+    }
+    .div-container {
+      border: 4px #c2e9e9 solid;
+      background-color: #e8fbfb;
+      padding: 5px;
+      margin-top: 10px;
+    }
+    .main {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .list {
+      border: 4px solid blue;
+      background-color: lightblue;
+      width: 200px;
+      height: 200px;
+      margin: 0;
+      padding: 0 10px;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    .journal {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Victoria's Journal</h1>
+      <div><h1>So fresh and so clean</h1></div>
+    </div>
+
+    <div class="content">
+      <div class="list">
+        <h1>Friends</h1>
+        <ul>
+          <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">190m Buddies</a></li>
+          <li><a href="http://www.willsmith.net/">Big Will</a></li>
+          <li><a href="http://youtube.com/watch?v=mZHoHaAYHq8" title="Conan the Librarian">Conan the Librarian</a></li>
+        </ul>
+      </div>
+
+      <div class="journal">
+        <div class="div-container">
+          <h2><span>04/09/08</span> Spatulas</h2>
+          <div class="main">
+            <img src="spoon.jpeg" alt="spatula">
+            <p>Yesterday I went to the store and got some much-needed spatulas! (What better way to say I love myself than to buy myself a spatula?)</p>
+          </div>
+        </div>
+
+        <div class="div-container">
+          <h2><span>04/08/08</span> Cookie Monster Cupcakes</h2>
+          <div class="main">
+            <img src="cartoon.jpeg" alt="cupcakes">
+            <p>My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster cupcakes are the best of both worlds.<br><br>
+            Did you know? Cookie Monster once said, “Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you.” I wonder if the same applies for cupcakes? (If so, I don't think I can ever love ANYONE!)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
