@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6eded;
+    color: white;
+}
+
+.container{
+    width: 100vw;
+    height: 70vh;
+    padding-bottom: 50px;
+    background-image: url("header-bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+     position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header h1{
+    font-weight: 900;
+    margin-left: 60px;
+}
+
+.nav{
+    margin-right: 100px;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+   font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+    padding: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+
+.nav ul li a:hover{
+     background-color: #f7dede;
+}
+.hero {
+    text-align: center;
+    margin-top: 100px;
+    padding: 60px 20px; /* Adds space inside the box */
+    border-radius: 8px;        /* Optional: rounded corners */
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.hero button {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 10px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  /* width: 100%; */
+}
