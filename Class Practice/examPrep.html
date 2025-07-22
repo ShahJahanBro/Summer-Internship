@@ -1,0 +1,382 @@
+<html>
+<head>
+	<title>Exam Preparation</title>
+	<style>
+		
+		body{
+			background-image: url("https://plus.unsplash.com/premium_photo-1752506090481-79ac7dadcc43?w=600&auto=format&fit=crop&q=60&ixlib=rb-			4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color:black;
+		}
+
+		table,tr,td{
+		border: 1px white solid;
+		border-collapse: collapse;
+		padding: 10px;
+		}
+
+		tr,td{
+		border-radius: 10px;
+		}
+		
+	
+		div p{
+			//color: yellow;
+		}
+
+		div p{
+			//background-color: pink;
+		}
+
+		div+p{
+			//background-color: green;
+		}
+
+		section + h1{
+			color:pink;
+		}
+		section ~ p {
+			color:yellow;
+		}
+		section + h2{
+			color:green;
+		}
+
+		section ~ h3{
+			color: orange;
+		}
+
+
+		div ~ p{
+			color:yellow;
+		}
+
+		div h2 {
+  color: red;
+}
+	
+	.name{
+		background-color: green;
+		display:inline;
+		padding: 20px;
+	}
+
+	.friend_name{
+		background-color:yellow;
+		display:block;
+		width:50vw;
+		padding: 20px;	
+		margin:auto;
+	}
+
+
+	.container{
+		border: 1px solid yellow;
+		max-width: 25vw;
+		height: 10vh;
+		//margin: auto;
+		padding: 10px;
+		background-color:yellow;
+		display:flex;
+		gap:30px
+	}
+
+	.box{
+		width: 10px;
+		height: 10px;
+		background-color: pink;
+	}
+
+	.fixed{
+		width:100%;
+		text-align:center;
+		background-color:yellow;
+		//position: fixed;
+		
+	}
+
+
+	.positions{
+
+		background-color:yellow;
+		width: 100%;
+		height: 50vh;
+		margin-top:10vh;
+
+	}
+
+
+	.header{
+		background-color:pink;
+		//position:fixed;
+	}
+
+	.flex-container{
+		margin-top: 50vh;
+		width: 50vw;
+		border: 2px green solid;
+		display:flex;
+		gap:20px;
+		//flex-direction: column-reverse;
+		flex-flow:wrap;
+		align-content: center;
+	}
+	.flex-container h1{
+		background-color: yellow;
+	}
+
+	
+		.grid-container{
+		  grid-template-columns: auto auto auto;
+		  background-color: dodgerblue;
+		  padding: 10px;
+		  display: grid;
+			grid-template-columns: auto auto auto;
+			gap:20px;
+		}
+
+		.grid-container > div {
+ 		background-color: #f1f1f1;
+		border: 1px solid black;
+		padding: 10px;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.grid-container .item-1{
+		background-color: red;
+		grid-column-start:1;
+		grid-column-end:3;
+	}
+	
+		.grid-container .item-2{
+		background-color: pink;
+		grid-column: 1 / span 2;
+	}
+
+		.grid-container .item-3{
+		background-color: pink;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
+
+.item1 {
+ grid-row: 1 / span 2;
+}
+
+		.grid-temp-area{
+			margin-top: 50vh;
+			width: 100%;
+			height:100vh;
+			background-color: yellow;
+			display:grid;
+			grid-template-columns: auto auto auto;
+			gap:10px;
+		}
+	
+		.grid-temp-area div{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		}
+
+		.grid-temp-area .header{
+			background-color:red;
+			grid-column: 1 / span 3;
+		}
+	
+		.grid-temp-area .left{
+			background-color:blue;
+			}
+
+		.grid-temp-area .main{
+			background-color:green;
+		
+		}
+
+		.grid-temp-area .right{
+			background-color:pink;
+		}
+
+		.grid-temp-area .footer{
+			background-color:white;
+			grid-column: 1 / span 3;
+		}
+	</style>
+</head>
+<body style="background-color:powderblue;">	
+	
+	
+	//<div class = "fixed"> Div with a Fixed Position</div>
+	<h1 align = "center">Hello World...</h1>
+	<p>Shah Jahan</p>
+
+	<h1>H <sub>2</sub> O</h1>
+
+	<b>This text is bold</b>
+
+	<strong>This text is important!</strong>
+	<i>This text is italic</i>
+	<br>
+	<em>This text is emphasized</em>
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+
+<small>This is some smaller text.</small>
+
+<p>My favorite color is <del>blue</del> red.</p>
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+
+	<table>
+	
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>	
+
+	</table>
+
+//disc,square,
+<ul style="list-style-type:none;"> 
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<ol start="99">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+	<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo" selected>Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+
+	<section>
+		<p>Shah Jahan</p>
+		<p>Shah Jahan</p>
+		<p>Shah Jahan</p>
+		<h1>Computer Science</h1>
+
+		<p>Shah Jahan</p>
+		<p>Shah Jahan</p>
+		<p>Shah Jahan</p>
+		<h1>Computer Science</h1>
+	</section>
+
+	<div>
+
+	<p>Shah Jahan</p>
+	<h1>Abbas</h1>
+	<h2>Rauf<h2>
+	<h3>Shah Nawaz</h3>
+	<p>Shah Jahan</p>
+	<h1>Abbas</h1>
+	<h2>Rauf<h2>
+	<h3>Shah Nawaz</h3>
+	<p>Shah Jahan</p>
+	<h1>Abbas</h1>
+	<h2>Rauf<h2>
+	<h3>Shah Nawaz</h3>
+
+	</div>
+
+	<div class = "name">Abudl Ahad</div>
+	<br>
+	<br>
+	<span class = "friend_name">Abdul Rauf</span>
+
+
+	<div class = "container">
+		<div>
+		<div class = "box"></div>
+		<div class = "box"></div>
+		<div class = "box"></div>
+		</div>
+
+		<div>
+		<div class = "box"></div>
+		<div class = "box"></div>
+		<div class = "box"></div>
+		</div>
+		
+	</div>
+
+
+	<div class = "positions">
+		<div class = "header"> Header</div>
+	</div>
+
+
+	<section class = "flex-container">
+
+		<h1>1</h1>
+		<h1>2</h1>
+		<h1>3</h1>
+		
+		<h1>1</h1>
+		<h1>2</h1>
+		<h1>3</h1>
+
+		<h1>1</h1>
+		<h1>2</h1>
+		<h1>3</h1>
+		
+		<h1>1</h1>
+		<h1>2</h1>
+		<h1>3</h1>
+
+		<h1>1</h1>
+		<h1>2</h1>
+		<h1>3</h1>
+	</section>
+
+
+	<div class="grid-container">
+  <div class = "item-1">1</div>
+  <div class = "item-2">2</div>
+  <div class = "item-3">3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+
+
+		<section class = "grid-temp-area">
+
+		<div class = "header"> Header </div>
+		<div class = "left"> Left </div>		
+		<div class = "main"> Main </div>
+		<div class = "right"> Right </div>
+		<div class = "footer"> Footer </div>
+		</section>
+</body>
+</html>
