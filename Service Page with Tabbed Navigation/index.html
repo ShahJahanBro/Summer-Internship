@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="services">
-        <h1 class="title">Our Services</h1>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="tabs-container">
+      <h1 class="title">Our Services</h1>
+
+      <div class="tabs">
+        <a href="#web" class="tab-link active">Web development</a>
+        <a href="#app" class="tab-link">Mobile App development</a>
+        <a href="#marketing" class="tab-link">Digital Marketing</a>
+      </div>
     </section>
-</body>
+
+    <section class="tab-content">
+
+      <div class="services-container" id="web">
+        <div class="icon-container">
+          <img src="images/web.avif" alt="" />
+        </div>
+        <h1 class="service-title">Web Development</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#"><button>Learn More</button></a>
+      </div>
+
+      <div class="services-container" id="app">
+        <div class="icon-container">
+          <img src="images/app.avif" alt="" />
+        </div>
+        <h1 class="service-title">App Development</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#"><button>Learn More</button></a>
+      </div>
+
+      <div class="services-container" id="marketing">
+        <div class="icon-container">
+          <img src="images/ui.avif" alt="" />
+        </div>
+        <h1 class="service-title">Digital Marketing</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#"><button>Learn More</button></a>
+      </div>
+    </section>
+
+    
+  </body>
 </html>
