@@ -28,24 +28,62 @@ body {
 
 .img_section{
     max-width: 950px;
-    border: 1px solid #000223;
     margin: 50px auto;
-    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3,300px);
-    justify-content: center;
-    gap:10px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 0 20px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
 }
 
 .img-container{
     width: 300px;
     height: 300px;
-    background-color: aqua;
+    border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover{
+     transform: scale(1.03);
 }
 
 .img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.img-container img:hover{
+     transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1000;
 }
