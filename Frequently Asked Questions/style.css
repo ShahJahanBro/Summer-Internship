@@ -6,7 +6,7 @@
 
 body {
   background-color: #A79885;
-  color: #000223;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
@@ -30,4 +30,150 @@ body {
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   text-transform: capitalize;
+}
+
+.faqs_container {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.question_container {
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.question_container.active .icon {
+  transform: rotate(180deg);
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+  margin-left: 25px;
+}
+
+.question_container.active .answer {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+  .faqs_container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .header #title {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+
+  .header h3 {
+    font-size: 1.2rem;
+  }
+
+  .question {
+    gap: 8px;
+    font-size: 1rem;
+  }
+
+  .answer {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .faqs_container {
+    margin: 30px 10px;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .header #title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .header h3 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .question {
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .answer {
+    font-size: 0.9rem;
+    margin-left: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header #title {
+    font-size: 1.5rem;
+  }
+
+  .header h3 {
+    font-size: 0.9rem;
+  }
+
+  .faqs_container {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .question {
+    font-size: 0.85rem;
+  }
+
+  .answer {
+    font-size: 0.85rem;
+  }
 }
