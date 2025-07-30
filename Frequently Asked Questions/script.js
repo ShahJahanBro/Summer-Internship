@@ -1,5 +1,4 @@
 let title = document.querySelector("#title");
-
 let str = "Frequently Asked Questions "
 
 
@@ -11,8 +10,8 @@ let interVal = setInterval(()=>{
 
 
 setTimeout(() => {
-    clearInterval(interVal)
-}, 780);
+  clearInterval(interVal);
+}, str.length * 30);
 
 
 
