@@ -165,3 +165,30 @@ body {
   color: #fff;
 }
 
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2C444D;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+}
+
+.footer-icons a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a img:hover {
+  transform: scale(1.2);
+}
+
+
+
