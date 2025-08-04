@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certifications</title>
     <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header-section">
-  <h1>Certificate Showcase</h1>
-  <p class="subtitle">Recognizing the hard work of our interns</p>
+      <h1>Certificate Showcase</h1>
+      <p class="subtitle">Recognizing the hard work of our interns</p>
     </header>
 
-</body>
+    <section class="certificates-gallery">
+      <h2>Internship Certificates</h2>
+      <div class="gallery-grid">
+        <div class="certificate-card">
+          <img src="images/edu.webp" alt="Certificate Preview" />
+          <h3>Web Internship</h3>
+          <p>Intern: Shah Jahan</p>
+          <p>Issued: May 2024</p>
+          <a
+            href="#"
+            class="view-btn"
+            onclick="openModal(event, 'images/edu.webp')"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/edu.webp" alt="Certificate Preview" />
+          <h3>Web Internship</h3>
+          <p>Intern: Shah Jahan</p>
+          <p>Issued: May 2024</p>
+          <a
+            href="#"
+            class="view-btn"
+            onclick="openModal(event, 'images/edu.webp')"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/edu.webp" alt="Certificate Preview" />
+          <h3>Web Internship</h3>
+          <p>Intern: Shah Jahan</p>
+          <p>Issued: May 2024</p>
+          <a
+            href="#"
+            class="view-btn"
+            onclick="openModal(event, 'images/edu.webp')"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/edu.webp" alt="Certificate Preview" />
+          <h3>Web Internship</h3>
+          <p>Intern: Shah Jahan</p>
+          <p>Issued: May 2024</p>
+          <a
+            href="#"
+            class="view-btn"
+            onclick="openModal(event, 'images/edu.webp')"
+            >View Certificate</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
